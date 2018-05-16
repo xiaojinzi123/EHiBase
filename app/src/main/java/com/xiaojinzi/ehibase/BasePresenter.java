@@ -77,4 +77,7 @@ public class BasePresenter<T extends IBaseView> {
         return false;
     }
 
+    public void onDestroy() {
+    }
+
 }

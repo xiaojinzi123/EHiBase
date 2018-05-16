@@ -126,7 +126,7 @@ public abstract class IBaseActivity<T extends BasePresenter> extends AppCompatAc
     protected void onDestroy() {
         super.onDestroy();
         if (presenter != null) {
-            presenter.unSubscribe();
+            presenter.onDestroy();
         }
         if (cd != null) {
             cd.dispose();

@@ -159,12 +159,11 @@ public abstract class IBaseFragment<T extends BasePresenter> extends Fragment im
     @Override
     public void onDestroy() {
         super.onDestroy();
-
+        if (presenter != null) {
+            presenter.onDestroy();
+        }
         if (cd != null) {
             cd.dispose();
-        }
-        if (presenter != null) {
-            presenter.unSubscribe();
         }
         if (baseViewImpl != null) {
             baseViewImpl.onDestroy();

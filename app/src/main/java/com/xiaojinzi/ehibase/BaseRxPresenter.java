@@ -169,4 +169,10 @@ public class BaseRxPresenter<T extends IBaseView>  extends BasePresenter<T>{
         }
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        unSubscribe();
+    }
+
 }
