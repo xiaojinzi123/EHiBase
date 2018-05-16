@@ -1,10 +1,10 @@
-package com.xiaojinzi.ehibase;
+package com.xiaojinzi.ehibase.base.presenter;
 
 import android.support.annotation.NonNull;
 
-import com.xiaojinzi.ehibase.inter.IBaseView;
-import com.xiaojinzi.ehibase.util.ErrorUtil;
-import com.xiaojinzi.ehibase.util.NetWorkErrorException;
+import com.xiaojinzi.ehibase.base.view.inter.IBaseView;
+import com.xiaojinzi.ehibase.base.util.ErrorUtil;
+import com.xiaojinzi.ehibase.base.util.NetWorkErrorException;
 
 /**
  * 这个可以针对任何的Observable进行订阅处理,除了定义的公共的异常,其他的异常请自行实现Consumer<Throwable>接口实现错误的逻辑

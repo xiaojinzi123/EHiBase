@@ -1,10 +1,10 @@
-package com.xiaojinzi.ehibase;
+package com.xiaojinzi.ehibase.base.presenter;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import com.xiaojinzi.ehibase.inter.IBaseView;
-import com.xiaojinzi.ehibase.rx.RxSchedulerProvider;
+import com.xiaojinzi.ehibase.base.view.inter.IBaseView;
+import com.xiaojinzi.ehibase.base.rx.RxSchedulerProvider;
 
 import io.reactivex.Observable;
 import io.reactivex.disposables.CompositeDisposable;

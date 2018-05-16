@@ -1,4 +1,4 @@
-package com.xiaojinzi.ehibase;
+package com.xiaojinzi.ehibase.base.view;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.xiaojinzi.ehibase.inter.IBaseView;
+import com.xiaojinzi.ehibase.base.view.inter.IBaseView;
+import com.xiaojinzi.ehibase.base.presenter.BasePresenter;
 
 import io.reactivex.disposables.CompositeDisposable;
 
